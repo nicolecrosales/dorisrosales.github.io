@@ -51,16 +51,6 @@ nav a:hover {
   background-color: #fbaf00;
   padding: 2em 1em 2em 1em;
 }
-.banner {
-  background-image: url(/DorisFotos/doris3.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: 100%;
-  margin: auto;
-  display: block;
-}
 .grid-para-miniportafolio {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
