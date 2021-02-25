@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500;600&family=Merienda:wght@400;700&display=swap");
+/* font font-family: 'Merienda', cursive;
+font-family: 'Crimson Pro', serif; */
+
+h3 {
+  font-family: "Crimson Pro", serif;
+  color: #172a61;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+}
+header {
+  background: #fbfffe;
+}
+
+.conatiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  align-content: center;
+}
+.logo {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 15%;
+  grid-column: 1/2;
+  width: 40%;
+}
+nav {
+  grid-column: 2/3;
+}
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
+  padding: 1em;
+  align-items: center;
+  align-content: center;
+}
+nav a {
+  color: #1b1b1e;
+  font-size: 1.1em;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+nav a:hover {
+  color: #fbfffe;
+  background-color: #fbaf00;
+  padding: 2em 1em 2em 1em;
+}
+.banner {
+  background-image: url(/DorisFotos/doris3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100%;
+  margin: auto;
+  display: block;
+}
+.grid-para-miniportafolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  padding: 1em;
+  align-items: center;
+  align-content: center;
+}
+.pintura-uno {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+}
+.pintura-dos {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+}
+.pintura-tres {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  width: 100%;
+}
+.pintura-cuatro {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 100%;
+}
+.pintura-cinco {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 100%;
+}
+.pintura-seis {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  width: 100%;
+}
+.gridparabotonportafolio {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  align-content: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.botonparairaportafolio {
+  grid-column: 3/4;
+  background: #172a61;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-decoration: none;
+  padding: 1.3em 3em 1.3em 3em;
+  text-align: center;
+  width: 70%;
+}
