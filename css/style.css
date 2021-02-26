@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500;600&family=Merienda:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap");
 /* font font-family: 'Merienda', cursive;
 font-family: 'Crimson Pro', serif; */
 * {
@@ -25,29 +26,32 @@ h2,
 h4,
 h5,
 h6 {
-  font-family: "Crimson Pro", serif;
-  color: #172a61;
+  text-align: center;
+  font-family: "Merienda", cursive;
 }
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
 }
+
+/* Header*/
+
 header {
-  background: #fbfffe;
   width: 100%;
+  padding: 1em;
 }
 .conatiner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 500px auto;
   align-items: center;
   align-content: center;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 .logo {
-  padding-top: 1em;
-  padding-bottom: 1em;
   padding-left: 15%;
   grid-column: 1/2;
-  width: 40%;
+  width: 100%;
 }
 nav {
   grid-column: 2/3;
@@ -62,31 +66,31 @@ nav ul {
 }
 nav a {
   color: #1b1b1e;
-  font-size: 1.1em;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   font-size: 0.9em;
 }
 nav a:hover {
-  color: #fbfffe;
-  background-color: #fbaf00;
-  padding: 2em 1em 2em 1em;
+  color: #485270;
+  font-size: 1em;
 }
+
+/* End Header
+
+main
+*/
 .pprimero {
   text-align: center;
   padding-top: 1.4em;
   padding-bottom: 1.4em;
   background-color: white;
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 1.8em;
+  color: #1b1b1e;
 }
-.pprimerodos {
-  text-align: center;
-  padding-top: 4em;
-  padding-bottom: 4em;
-  background-color: white;
-  font-size: 1.4em;
-}
+
+/* Galeria de Home*/
+
 .grid-para-miniportafolio {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -149,48 +153,179 @@ nav a:hover {
   width: 100%;
   height: 100%;
 }
+
+/*Fin Galeria
+
+Cita
+*/
+
 .parrafoencursiva {
   font-size: 0.9em;
   font-style: italic;
   text-align: center;
   padding: 2em;
+  color: #1b1b1e;
 }
 .parrafoparaautor {
   font-size: 0.9em;
   font-weight: bold;
-  color: rgb(53, 50, 50);
+  color: #3b3c41;
   text-align: center;
   margin-bottom: 4em;
 }
+
+/* Boton portafolio */
+
 .gridparabotonportafolio {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr;
   align-items: center;
   align-content: center;
+  justify-content: center;
+  justify-items: center;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 .botonparairaportafolio {
-  grid-column: 3/4;
-  background: #172a61;
+  grid-column: 1/2;
+  background: #2b3964;
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 0.9em;
+  font-size: 1em;
   text-decoration: none;
-  padding: 1.3em 3em 1.3em 3em;
+  padding: 1.4em 3.5em 1.4em 3.5em;
   text-align: center;
-  width: 70%;
+  width: 100px;
 }
+
+/* Fin de boton portafolio*/
+
 hr {
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
+
+/*Conoce A Doris  */
+
 .heading {
   text-align: center;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 3em;
+  padding-bottom: 1.5em;
+  font-family: "Merienda", cursive;
+  font-size: 2em;
+  color: #2b3964;
+}
+.conoceadoris {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .conoceadoris img {
   width: 100%;
+}
+.pprimerodos {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: #1b1b1e;
+  font-size: 1.2em;
+}
+
+/* Articulos*/
+
+.grid-para-exposicion {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  justify-content: center;
+  justify-items: center;
+  background: #fbfffe;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+.articulo-uno {
+  grid-column: 1/2;
+  width: 100%;
+}
+.articulo-dos {
+  grid-column: 2/3;
+  width: 100%;
+}
+.articulo-tres {
+  grid-column: 3/4;
+  width: 100%;
+}
+article img {
+  width: 100%;
+}
+article {
+  height: 600px;
+  text-align: center;
+}
+article h3 {
+  padding: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+article p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: #1b1b1e;
+}
+.grid-para-exposicion a {
+  text-decoration: none;
+  color: #1b1b1e;
+}
+
+.grid-para-exposicion a:hover {
+  box-shadow: 1px 1px 4px 1px #888;
+  border-radius: 3px;
+  background-color: white;
+  overflow: hidden;
+  height: 600px;
+}
+
+footer {
+  background: #1b1b1e;
+  color: #6d676e;
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 1em;
+}
+footer h3 {
+  font-size: 2em;
+  margin-bottom: -0.5em;
+}
+.getintouchfooter {
+  font-size: 1em;
+}
+.navfooter {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.finalfooter {
+  margin-top: 3em;
+}
+footer a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #6d676e;
+  font-size: 1em;
+}
+footer p {
+  font-size: 1em;
+}
+footer a:hover {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline;
+  color: #6d676e;
+  font-size: 1.1em;
+}
+.social img {
+  width: 3em;
+}
+.social a:hover {
+  border-radius: 50%;
+  border: solid 1px #6d676e;
 }
