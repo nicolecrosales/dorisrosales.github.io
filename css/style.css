@@ -6,16 +6,25 @@ font-family: 'Crimson Pro', serif; */
   margin: 0px;
   padding: 0px;
 }
-body {
+#banner {
   background-image: url("/DorisFotos/doris3.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
-  background-color: #fbfffe;
-  min-height: 100%;
-  margin: auto;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 }
-h3 {
+#body {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+h3,
+h1,
+h2,
+h4,
+h5,
+h6 {
   font-family: "Crimson Pro", serif;
   color: #172a61;
 }
@@ -25,21 +34,7 @@ p {
 }
 header {
   background: #fbfffe;
-}
-
-div .vacio {
   width: 100%;
-  height: 1000px;
-  position: absolute;
-  top: 50%;
-  bottom: 50%;
-}
-.pprimero {
-  text-align: center;
-  padding-top: 5em;
-  padding-bottom: 5em;
-  background-color: white;
-  font-size: 1.4em;
 }
 .conatiner {
   display: grid;
@@ -53,10 +48,6 @@ div .vacio {
   padding-left: 15%;
   grid-column: 1/2;
   width: 40%;
-}
-.maincopy {
-  background-color: white;
-  margin: auto;
 }
 nav {
   grid-column: 2/3;
@@ -81,6 +72,21 @@ nav a:hover {
   background-color: #fbaf00;
   padding: 2em 1em 2em 1em;
 }
+.pprimero {
+  text-align: center;
+  padding-top: 1.4em;
+  padding-bottom: 1.4em;
+  background-color: white;
+  font-size: 1.4em;
+  line-height: 1.8em;
+}
+.pprimerodos {
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background-color: white;
+  font-size: 1.4em;
+}
 .grid-para-miniportafolio {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -93,31 +99,68 @@ nav a:hover {
   grid-column: 1/2;
   grid-row: 1/2;
   width: 100%;
+  height: 100%;
 }
 .pintura-dos {
   grid-column: 2/3;
   grid-row: 1/2;
   width: 100%;
+  height: 100%;
 }
 .pintura-tres {
   grid-column: 3/4;
   grid-row: 1/2;
   width: 100%;
+  height: 100%;
 }
 .pintura-cuatro {
   grid-column: 1/2;
   grid-row: 2/3;
   width: 100%;
+  height: 100%;
 }
 .pintura-cinco {
   grid-column: 2/3;
   grid-row: 2/3;
   width: 100%;
+  height: 100%;
 }
 .pintura-seis {
   grid-column: 3/4;
   grid-row: 2/3;
   width: 100%;
+  height: 100%;
+}
+.pintura-siete {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  width: 100%;
+  height: 100%;
+}
+.pintura-ocho {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  width: 100%;
+  height: 100%;
+}
+.pintura-nueve {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  width: 100%;
+  height: 100%;
+}
+.parrafoencursiva {
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: center;
+  padding: 2em;
+}
+.parrafoparaautor {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: rgb(53, 50, 50);
+  text-align: center;
+  margin-bottom: 4em;
 }
 .gridparabotonportafolio {
   display: grid;
@@ -138,4 +181,16 @@ nav a:hover {
   padding: 1.3em 3em 1.3em 3em;
   text-align: center;
   width: 70%;
+}
+hr {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.heading {
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.conoceadoris img {
+  width: 100%;
 }
